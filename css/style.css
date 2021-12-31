@@ -1,0 +1,99 @@
+body, html
+{
+    margin: 0;
+}
+.container
+{
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+}
+.links
+{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 16px;
+    line-height: 10px;
+}
+.links div
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.links div img
+{
+    padding-left: 10px;
+}
+header
+{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(47, 164, 231);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(44, 152, 214);
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 
+        0 0.15em 0.2em 0 rgba(0, 0, 0, 0.534),
+        inset 0 0 0.6em 0 rgba(0, 0, 0, 0.226);
+}
+.content
+{
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    padding-top: 30px;
+    font-family: sans-serif;
+}
+hr
+{
+    height: 0.05em;
+    background-color: black;
+}
+h1, h2, h3, h4
+{
+    margin: 0;
+}
+.subcontent
+{
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.center
+{
+    text-align: center;
+}
+.center div:first-child
+{
+    font-size: 15px;
+}
+.center div:last-child
+{
+    font-size: 13px;
+}
+.formation div div:not(div:first-child)
+{
+    padding-bottom: 20px;
+}
+.formation2
+{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+.formation2 div:last-child
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+}
