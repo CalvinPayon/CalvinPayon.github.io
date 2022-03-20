@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Portfolio, Portfolio calvin payon">
+    <meta name="description" content="Portfolio de Calvin Payon - Développeur Web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/mainproject.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Portfolio - Calvin Payon</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+</head>
+<body>
+    <div class="nav">
+         <div class="accueil" id="accueil" onclick="scrollup()">
+            <p><i class="fas fa-home"></i></p>
+        </div>
+        <div class="contact" id="contact" onclick="window.location.href='mailto:calvinpayon@gmail.com'">
+            <p><i class="far fa-paper-plane"></i></p>
+        </div>
+    </div>
+
+    <div class="maintext">
+        <p id="animtxt"></p>
+    </div>
+
+    <div class="arrow" onclick="scrolldown()">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <section id="section">
+        <div class="box">
+            <h3>Liste de mes projets</h3>
+            <div class="list" onclick="window.location.href='./projets/CV/index.html'">
+                <div class="imgBx">
+                    <img src="./SRC/img/cv.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>CV</h4>
+                    <p>PDF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/sw.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</body>
+</html>
