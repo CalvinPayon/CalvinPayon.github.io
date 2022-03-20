@@ -11,11 +11,11 @@ self.addEventListener('install', function(event) {
 		caches.open('v1').then(function(cache) {
 			return cache.addAll([
 				'/index.html',
+				'/sw.js',
 				'/SRC/img/cv.png',
 				'/projets/CV/cv.pdf',
 				'/projets/CV/index.html',
 				'/JS/script.js',
-				'/JS/sw.js',
 				'/CSS/header.css',
 				'/CSS/mainproject.css',
 				'/CSS/style.css'
