@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function(reg) {
+	navigator.serviceWorker.register('./JS/sw.js', { scope: '../' }).then(function(reg) {
 		console.log('Registration succeeded. Scope is ' + reg.scope);
 		}).catch(function(error) {
 		console.log('Registration failed with ' + error);
@@ -10,24 +10,15 @@ self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open('v1').then(function(cache) {
 			return cache.addAll([
-				'/index.php',
-				'/js/outils.js',
-				'/css/style.css',
-				'/img/favicon.png',
-				'/img/favicon120.png',
-				'/img/favicon144.png',
-				'/img/favicon152.png',
-				'/img/favicon512.png',
-				'/img/linck.jpg',
-				'/img/linkedin.png',
-				'/img/researchgate.png',
-				'/img/top_arrow.png',
-				'/pages/accueil.html',
-				'/pages/algopath.html',
-				'/pages/enseignements.html',
-				'/pages/mentions-legales.html',
-				'/pages/publications.html',
-				'/pages/these.html'
+				'/index.html',
+				'/SRC/img/cv.png',
+				'/projets/CV/cv.pdf',
+				'/projets/CV/index.html',
+				'/JS/script.js',
+				'/JS/sw.js',
+				'/CSS/header.css',
+				'/CSS/mainproject.css',
+				'/CSS/style.css'
 			]);
 		})
 	);
